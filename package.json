@@ -1,0 +1,40 @@
+{
+  "name": "@insd47/current-src",
+  "version": "1.0.0",
+  "description": "Resolve the current responsive image source from srcset and sizes.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "currentSrc",
+    "image",
+    "responsive-image",
+    "sizes",
+    "srcset"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "srcset": "^5.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@11.7.0"
+}
